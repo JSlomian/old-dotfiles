@@ -1,0 +1,14 @@
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[4]=* r:|=* l:|=*'
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+zstyle :compinstall filename '/home/jslomian/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+eval "$(starship init zsh)"
